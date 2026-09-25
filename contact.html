@@ -394,7 +394,154 @@ html{scroll-behavior:smooth}body{overflow-x:hidden}.section,.contact,.simple-foo
 @media(max-width:850px){.location-grid{grid-template-columns:1fr}.location-card{min-height:auto}.geo-head{flex-direction:column}.geo-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.location-section{padding:75px 0}.location-card,.geo-card{padding:25px}.geo-grid{grid-template-columns:1fr}.geo-count strong{font-size:27px}}
 </style>
-<style id="hellux-whatsapp-style">.hellux-whatsapp{position:fixed;right:24px;bottom:24px;width:62px;height:62px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#25d366;color:white;box-shadow:0 8px 32px #0008,0 0 0 5px #25d36624;z-index:99999;transition:transform .25s ease,box-shadow .25s ease}.hellux-whatsapp:hover,.hellux-whatsapp:focus-visible{transform:translateY(-5px) scale(1.06);box-shadow:0 12px 35px #25d36670}.hellux-whatsapp svg{display:block}@media(max-width:600px){.hellux-whatsapp{right:17px;bottom:18px;width:56px;height:56px}}@media(prefers-reduced-motion:reduce){.hellux-whatsapp{transition:none}}</style></head><style>.inner-page{padding-top:110px;min-height:100vh}.page-intro{max-width:1200px;margin:0 auto;padding:90px 6vw 45px;transform-style:preserve-3d}.page-intro h1{font-size:clamp(52px,9vw,120px);line-height:.9;margin:10px 0 20px;letter-spacing:-.06em}.page-intro h1 span{color:#22d3ee}.page-intro p{max-width:650px;color:rgba(255,255,255,.7);font-size:18px;line-height:1.6}.page-intro .eyebrow{color:#22d3ee;font-weight:800;letter-spacing:.18em;font-size:12px}.inner-page>section{scroll-margin-top:80px}.inner-page .section:first-of-type{padding-top:45px}@media(max-width:700px){.inner-page{padding-top:80px}.page-intro{padding:65px 6vw 30px}.page-intro p{font-size:15px}}</style><style id="hellux-worldwide-map-css">
+<style id="hellux-whatsapp-style">.hellux-whatsapp{position:fixed;right:24px;bottom:24px;width:62px;height:62px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#25d366;color:white;box-shadow:0 8px 32px #0008,0 0 0 5px #25d36624;z-index:99999;transition:transform .25s ease,box-shadow .25s ease}.hellux-whatsapp:hover,.hellux-whatsapp:focus-visible{transform:translateY(-5px) scale(1.06);box-shadow:0 12px 35px #25d36670}.hellux-whatsapp svg{display:block}@media(max-width:600px){.hellux-whatsapp{right:17px;bottom:18px;width:56px;height:56px}}@media(prefers-reduced-motion:reduce){.hellux-whatsapp{transition:none}}</style><style id="hellux-v20-mobile">/* v20: mobile-only layout; desktop styling stays as v18. */
+@media(max-width:900px){
+  html{scroll-padding-top:78px}
+  header{z-index:1000}
+  nav{position:relative;gap:12px}
+  .header-brand{flex:0 0 auto;min-width:0;position:relative;z-index:1003}
+  .hamb{display:flex!important;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;min-height:44px;position:relative;z-index:1003;cursor:pointer;touch-action:manipulation}
+  .nav-links{display:none!important}
+  .nav-links.hellux-menu-open{display:flex!important;position:fixed;left:12px;right:12px;top:calc(72px + env(safe-area-inset-top,0px));width:auto;max-height:calc(100dvh - 92px - env(safe-area-inset-bottom,0px));overflow-y:auto;overscroll-behavior:contain;z-index:1002;flex-direction:column;align-items:stretch;gap:0;padding:12px;border:1px solid rgba(88,216,255,.3);border-radius:19px;background:rgba(2,12,20,.98);box-shadow:0 20px 65px rgba(0,0,0,.75),inset 0 1px rgba(255,255,255,.07);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+  .nav-links.hellux-menu-open a{display:block;width:100%;opacity:1;font-size:12px;letter-spacing:.13em;padding:15px 17px;border-bottom:1px solid rgba(98,210,255,.09);border-radius:9px}
+  .nav-links.hellux-menu-open a:last-child{border-bottom:0}
+  .nav-links.hellux-menu-open a:active,.nav-links.hellux-menu-open a:focus-visible{color:#7beaff;background:rgba(25,196,255,.12)}
+  body.hellux-menu-visible{overflow:hidden}
+  .hero-grid,.container,.footer-grid,.work-grid,.brands-showcase,.service-cards{min-width:0}
+  .hero-scene{display:grid!important;visibility:visible!important;opacity:1;transform-style:preserve-3d;isolation:isolate}
+  .hero-crystal{animation:float 5s ease-in-out infinite!important;transform-style:preserve-3d;will-change:transform}
+  .hero-ring{animation:spin 15s linear infinite!important}
+  .hero-halo{animation:pulse 5s ease-in-out infinite!important}
+  .service,.brand-card,.case,.stat,.step,.contact-box{transform-style:preserve-3d}
+  .hellux-map-shell,.hellux-map-layout,.hellux-map-visual{min-width:0}
+  .hellux-map-visual img{max-width:100%;height:auto;aspect-ratio:1080/510;object-fit:contain}
+}
+@media(max-width:600px){
+  html,body{max-width:100%;overflow-x:clip}
+  header{height:72px}
+  nav{padding-inline:18px}
+  .nav-logo{width:clamp(104px,29vw,128px);height:auto;display:block}
+  .hero{height:auto!important;min-height:0!important;max-height:none!important;display:block!important;overflow:hidden;padding:0 0 42px!important}
+  .hero-grid{display:flex!important;flex-direction:column!important;align-items:center!important;height:auto!important;min-height:0!important;padding:0 18px!important;gap:0!important}
+  .hero-copy{width:100%;padding:110px 2px 8px!important;display:flex!important;flex-direction:column;align-items:center;text-align:center!important;z-index:5}
+  .hero-copy .eyebrow{font-size:9px;letter-spacing:.27em}
+  .hero-copy h2{font-size:clamp(29px,8vw,43px)!important;max-width:450px!important;line-height:1.13;margin:16px auto 12px!important}
+  .hero-copy p{font-size:clamp(12px,3.5vw,14px)!important;max-width:390px!important;margin-inline:auto!important;line-height:1.65}
+  .hero-copy .actions{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;margin-top:21px}
+  .hero-copy .primary{min-height:44px;min-width:0;padding:13px 19px}
+  .hero-copy .secondary{min-height:44px;display:flex;align-items:center;gap:5px}
+  .hero-scene{position:relative!important;display:grid!important;flex:0 0 auto;width:100%;height:clamp(290px,83vw,410px)!important;margin:0 auto!important;overflow:visible;perspective:950px;z-index:4;place-items:center}
+  .hero-crystal{width:clamp(170px,51vw,270px)!important;top:-8px;position:relative;z-index:4;filter:drop-shadow(0 0 23px rgba(24,196,255,.55))}
+  .hero-crystal img{width:100%;height:auto;object-fit:contain;display:block}
+  .hero-halo{width:clamp(245px,74vw,350px)!important;height:clamp(245px,74vw,350px)!important;max-width:100%}
+  .hero-ring{width:min(89vw,390px)!important;height:clamp(112px,35vw,160px)!important;max-width:100%}
+  .hero-ring.r2{width:min(96vw,430px)!important;height:clamp(125px,38vw,180px)!important;max-width:100%}
+  .hero-stage{width:min(95vw,440px)!important;max-width:100%;bottom:5px!important}
+  .mobile-hero-meta{display:flex!important;position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;z-index:5;margin:0 auto;padding:4px 18px 12px}
+  .scrollcue{display:none}
+  .hero:after{background-size:cover!important;background-position:center 66%!important}
+  .service-cards,.brands-showcase,.work-grid,.process{grid-template-columns:minmax(0,1fr)!important}
+  .service,.brand-card,.case,.stat,.step,.contact-box{max-width:100%}
+  .case{min-height:330px}.case.small{min-height:200px}
+  .global-reach-panel{padding:23px 18px}
+  .hellux-map-section{padding:64px 0}
+  .hellux-map-shell{padding:18px 12px;border-radius:19px}
+  .hellux-map-top{gap:8px;flex-wrap:wrap}
+  .hellux-map-top strong{font-size:26px}
+  .hellux-map-pill{font-size:8px;padding:8px 10px}
+  .hellux-map-layout{grid-template-columns:minmax(0,1fr);gap:14px}
+  .hellux-map-visual{width:100%;aspect-ratio:1080/510;min-height:0}
+  .hellux-map-regions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;width:100%}
+  .hellux-region{min-width:0;padding:10px 8px;font-size:10px;line-height:1.3}
+  .hellux-map-bottom{font-size:9px;line-height:1.5}
+  .hellux-whatsapp{position:fixed!important;right:max(16px,env(safe-area-inset-right,0px))!important;bottom:max(18px,env(safe-area-inset-bottom,0px))!important;z-index:99999!important}
+  .reveal{filter:none;transition-duration:.65s}
+}
+@media(max-width:380px){
+  .hero-copy{padding-top:99px!important}
+  .hero-copy h2{font-size:29px!important}
+  .hero-scene{height:290px!important}
+  .hero-crystal{width:174px!important}
+  .hero-copy .actions{gap:8px}
+  .hero-copy .secondary{font-size:9px}
+  .hellux-map-regions{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){.hero-crystal,.hero-ring,.hero-halo{animation:none!important}}
+</style><style id="hellux-v23-motion-repair">
+/* Unified desktop + mobile animation engine. No competing breakpoint overrides. */
+@keyframes hx23-float {0%,100%{transform:translate3d(0,0,0) rotateY(-5deg) rotateX(2deg)}50%{transform:translate3d(0,-25px,0) rotateY(6deg) rotateX(-2deg)}}
+@keyframes hx23-spin {from{transform:rotate(-12deg)}to{transform:rotate(348deg)}}
+@keyframes hx23-spin2 {from{transform:rotate(26deg)}to{transform:rotate(-334deg)}}
+@keyframes hx23-halo {0%,100%{transform:scale(.95);opacity:.65}50%{transform:scale(1.12);opacity:1}}
+@keyframes hx23-map {0%,100%{transform:translate3d(0,0,0) rotate(-.35deg)}50%{transform:translate3d(0,-13px,0) rotate(.35deg)}}
+@keyframes hx23-pin {0%{transform:scale(.5);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+.hero-scene{perspective:1100px;transform-style:preserve-3d}
+/* Transform animations target children, never .reveal or the JS-controlled scene. */
+.hero-scene>.hero-crystal{animation:hx23-float 4.7s ease-in-out infinite!important;animation-play-state:running!important;transform-origin:center center;will-change:transform}
+.hero-scene>.hero-ring{animation:hx23-spin 16s linear infinite!important;animation-play-state:running!important;will-change:transform}
+.hero-scene>.hero-ring.r2{animation:hx23-spin2 20s linear infinite!important;animation-play-state:running!important}
+.hero-scene>.hero-halo{animation:hx23-halo 4.7s ease-in-out infinite!important;animation-play-state:running!important}
+.hellux-map-visual{animation:hx23-map 7s ease-in-out infinite!important;animation-play-state:running!important;will-change:transform;transform-origin:center center}
+.hellux-map-visual>.hellux-map-pins .hellux-pin:after{animation:hx23-pin 2.8s ease-out infinite!important}
+/* Do not separately animate the image: markers and continents must move together. */
+.hellux-map-visual>img{animation:none!important;transform:none!important}
+/* An OS reduced-motion setting is respected; users can opt in via the animation button. */
+@media(prefers-reduced-motion:reduce){html:not(.hellux-motion-on) .hero-scene>.hero-crystal,html:not(.hellux-motion-on) .hero-scene>.hero-ring,html:not(.hellux-motion-on) .hero-scene>.hero-halo,html:not(.hellux-motion-on) .hellux-map-visual,html:not(.hellux-motion-on) .hellux-pin:after{animation:none!important}}
+.hellux-motion-toggle{position:fixed;left:16px;bottom:16px;z-index:99998;border:1px solid #54d9f8;border-radius:99px;padding:10px 15px;background:#09222f;color:#e8faff;font:700 12px system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 25px #0007}
+@media(max-width:900px){.hero-scene>.hero-crystal{animation-duration:5.2s!important}.hellux-map-visual{animation-duration:8.5s!important}}
+</style>
+<style id="hellux-v28-centered-mobile-footer">
+/* Mobile-only footer refinement; no changes to hero, logo, rings or map. */
+@media (max-width: 700px) {
+  .simple-footer { padding: 44px 22px 30px !important; box-sizing: border-box; }
+  .simple-footer > .container:first-child {
+    width: 100% !important; max-width: 480px !important;
+    margin: 0 auto 24px !important; padding: 0 6px 22px !important;
+    box-sizing: border-box; text-align: center !important;
+    line-height: 1.7; letter-spacing: .11em;
+  }
+  .simple-footer-inner {
+    width: 100% !important; max-width: 480px !important; margin: 0 auto !important;
+    display: flex !important; flex-direction: column !important;
+    align-items: center !important; gap: 30px !important; text-align: center !important;
+  }
+  .simple-footer-brand { width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .simple-footer-brand img { width: clamp(130px, 42vw, 178px) !important; height: auto; margin: 0 auto 12px !important; }
+  .simple-footer-brand p { margin: 0 !important; text-align: center; }
+  .simple-footer-links {
+    display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: min(100%, 330px) !important; gap: 15px 18px !important;
+    margin: 0 auto !important; text-align: center !important; justify-items: center;
+  }
+  .simple-footer-links a { display: inline-block; padding: 5px 4px; text-align: center; }
+  .simple-footer-links a:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .simple-footer-socials {
+    display: flex !important; flex-direction: row !important; flex-wrap: wrap !important;
+    justify-content: center !important; align-items: center !important;
+    width: 100% !important; max-width: 440px !important; gap: 14px 22px !important;
+    margin: 0 auto !important; text-align: center !important;
+  }
+  .simple-footer-bottom {
+    width: 100% !important; max-width: 480px !important; margin: 35px auto 0 !important;
+    padding: 23px 0 0 !important; box-sizing: border-box;
+    display: flex !important; flex-direction: column !important;
+    align-items: center !important; justify-content: center !important;
+    gap: 5px !important; text-align: center !important;
+  }
+  .simple-footer-bottom span { display: block; text-align: center; }
+}
+@media (max-width: 360px) {
+  .simple-footer { padding-left: 16px !important; padding-right: 16px !important; }
+  .simple-footer-socials { gap: 13px 16px !important; }
+}
+@media (max-width: 700px) {
+  .page-footer { text-align: center !important; padding-left: 20px !important; padding-right: 20px !important; }
+  .page-footer > .container { width: 100% !important; max-width: 480px !important; margin-left: auto !important; margin-right: auto !important; text-align: center !important; box-sizing: border-box; }
+  .page-footer-links { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; align-items: center !important; gap: 14px 22px !important; text-align: center !important; }
+  .page-footer-links a { overflow-wrap: anywhere; }
+}
+</style>
+</head><style>.inner-page{padding-top:110px;min-height:100vh}.page-intro{max-width:1200px;margin:0 auto;padding:90px 6vw 45px;transform-style:preserve-3d}.page-intro h1{font-size:clamp(52px,9vw,120px);line-height:.9;margin:10px 0 20px;letter-spacing:-.06em}.page-intro h1 span{color:#22d3ee}.page-intro p{max-width:650px;color:rgba(255,255,255,.7);font-size:18px;line-height:1.6}.page-intro .eyebrow{color:#22d3ee;font-weight:800;letter-spacing:.18em;font-size:12px}.inner-page>section{scroll-margin-top:80px}.inner-page .section:first-of-type{padding-top:45px}@media(max-width:700px){.inner-page{padding-top:80px}.page-intro{padding:65px 6vw 30px}.page-intro p{font-size:15px}}</style><style id="hellux-worldwide-map-css">
 .hellux-map-section{padding:92px 0 105px;position:relative;overflow:hidden}.hellux-map-section:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 56% 43%,rgba(0,190,240,.075),transparent 58%);pointer-events:none}
 .hellux-map-title{text-align:center;margin-bottom:35px}.hellux-map-title .eyebrow{color:#5cdaff;letter-spacing:.19em;font-size:10px;font-weight:800}.hellux-map-title h2{font-size:clamp(32px,4.6vw,57px);letter-spacing:-.055em;line-height:1.12;margin:12px 0}.hellux-map-title h2 span{color:#51d6ff}.hellux-map-title p{max-width:590px;margin:0 auto;color:#8aa4b3;font-size:12px;line-height:1.9}
 .hellux-map-shell{position:relative;border:1px solid rgba(69,191,233,.18);border-radius:28px;background:linear-gradient(140deg,rgba(11,33,45,.94),rgba(3,11,19,.96));padding:34px 30px 28px;box-shadow:0 28px 85px rgba(0,0,0,.27);overflow:hidden}.hellux-map-shell:before{content:"";position:absolute;inset:0;opacity:.2;background-image:linear-gradient(rgba(68,175,220,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(68,175,220,.13) 1px,transparent 1px);background-size:38px 38px;pointer-events:none}
@@ -447,8 +594,57 @@ html{scroll-behavior:smooth}body{overflow-x:hidden}.section,.contact,.simple-foo
 <span>All rights reserved.</span>
 </div>
 </footer><script>
-const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show')}),{threshold:.14,rootMargin:'0px 0px -7% 0px'});document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=`${Math.min((i%5)*70,280)}ms`;revealObserver.observe(el)});
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show')}),{threshold:.08,rootMargin:'0px 0px 0px 0px'});document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=`${Math.min((i%5)*70,280)}ms`;revealObserver.observe(el)});
 const isTouch=matchMedia('(pointer:coarse)').matches;
 if(!isTouch){document.querySelectorAll('.service,.brand-card,.case,.stat').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5,lift=card.classList.contains('brand-card')?12:8,z=card.classList.contains('brand-card')?34:18;card.style.transform=`perspective(1000px) translate3d(${x*8}px,${-lift+y*-5}px,${z}px) rotateX(${y*-5}deg) rotateY(${x*7}deg)`});card.addEventListener('mouseleave',()=>{card.style.transform=''});});}
-let ticking=false;addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const y=scrollY,c=document.querySelector('.hero-crystal'),m=document.querySelector('.mountains');if(c&&innerWidth>900)c.style.transform=`translateY(${Math.min(y*.04,28)}px) rotateY(${Math.sin(y/650)*3}deg)`;if(m)m.style.transform=`translateX(-50%) translateY(${Math.min(y*.045,30)}px)`;ticking=false})},{passive:true});
-</script><a aria-label="Chat with HELLUX Media on WhatsApp" class="hellux-whatsapp" href="https://wa.me/447529762489" rel="noopener noreferrer" target="_blank" title="Chat with us on WhatsApp"><svg aria-hidden="true" fill="currentColor" height="29" viewbox="0 0 32 32" width="29"><path d="M16 .8A15.1 15.1 0 0 0 3 23.6L.8 31l7.6-2A15.2 15.2 0 1 0 16 .8Zm0 27.5a12.2 12.2 0 0 1-6.2-1.7l-.5-.3-4.5 1.2 1.2-4.4-.3-.5A12.3 12.3 0 1 1 16 28.3Zm6.8-9.2c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5s-1.3 1.3-1.3 3.1 1.4 4.8c2.7 4.1 4.8 5.7 6.7 6.4 1 .4 1.8.6 2.4.7 1 .2 1.9.2 2.6-.1.8-.2 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5Z"></path></svg></a></body></html>
+let ticking=false;addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const y=scrollY,m=document.querySelector('.mountains');if(m)m.style.transform=`translateX(-50%) translateY(${Math.min(y*.045,30)}px)`;ticking=false})},{passive:true});
+</script><a aria-label="Chat with HELLUX Media on WhatsApp" class="hellux-whatsapp" href="https://wa.me/447529762489" rel="noopener noreferrer" target="_blank" title="Chat with us on WhatsApp"><svg aria-hidden="true" fill="currentColor" height="29" viewbox="0 0 32 32" width="29"><path d="M16 .8A15.1 15.1 0 0 0 3 23.6L.8 31l7.6-2A15.2 15.2 0 1 0 16 .8Zm0 27.5a12.2 12.2 0 0 1-6.2-1.7l-.5-.3-4.5 1.2 1.2-4.4-.3-.5A12.3 12.3 0 1 1 16 28.3Zm6.8-9.2c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5s-1.3 1.3-1.3 3.1 1.4 4.8c2.7 4.1 4.8 5.7 6.7 6.4 1 .4 1.8.6 2.4.7 1 .2 1.9.2 2.6-.1.8-.2 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5Z"></path></svg></a><script id="hellux-v20-mobile-js">/* v19: mobile navigation and touch-friendly 3D motion. */
+(()=>{
+  const nav=document.querySelector('header nav');
+  const button=nav?.querySelector('.hamb');
+  const links=nav?.querySelector('.nav-links');
+  if(button&&links){
+    button.setAttribute('type','button');
+    button.setAttribute('aria-controls','hellux-mobile-navigation');
+    button.setAttribute('aria-expanded','false');
+    links.id='hellux-mobile-navigation';
+    const close=()=>{links.classList.remove('hellux-menu-open');document.body.classList.remove('hellux-menu-visible');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open navigation menu');};
+    button.addEventListener('click',()=>{
+      const opening=!links.classList.contains('hellux-menu-open');
+      links.classList.toggle('hellux-menu-open',opening);
+      document.body.classList.toggle('hellux-menu-visible',opening);
+      button.setAttribute('aria-expanded',String(opening));
+      button.setAttribute('aria-label',opening?'Close navigation menu':'Open navigation menu');
+    });
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+    document.addEventListener('pointerdown',e=>{if(links.classList.contains('hellux-menu-open')&&!nav.contains(e.target))close()});
+    addEventListener('resize',()=>{if(innerWidth>900)close()},{passive:true});
+  }
+  // Keep the floating 3D logo visible and animated on phones; scroll effects
+  // on cards remain CSS-driven and don't require a mouse.
+  const coarse=matchMedia('(pointer:coarse)').matches;
+  if(coarse&&'IntersectionObserver'in window){
+    const observer=new IntersectionObserver(entries=>entries.forEach(({target,isIntersecting})=>{
+      if(isIntersecting){target.classList.add('hellux-mobile-depth');observer.unobserve(target)}
+    }),{threshold:.13});
+    document.querySelectorAll('.service,.brand-card,.case,.stat,.step').forEach(el=>observer.observe(el));
+  }
+})();
+</script><script id="hellux-v23-motion-controller">(()=>{
+ const mq=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const button=document.createElement('button');
+ button.className='hellux-motion-toggle';button.type='button';
+ const update=()=>{
+   const reduced=mq.matches;
+   button.hidden=!reduced;
+   button.textContent=document.documentElement.classList.contains('hellux-motion-on')?'Pause animations':'Enable animations';
+ };
+ button.addEventListener('click',()=>{document.documentElement.classList.toggle('hellux-motion-on');update()});
+ document.body.appendChild(button);
+ if(mq.addEventListener)mq.addEventListener('change',update);
+ update();
+ // Never write transforms to animated elements. Ensure hero reveal is visible on load.
+ const scene=document.querySelector('.hero-scene');
+ if(scene){scene.classList.add('show');scene.style.opacity='1';scene.style.visibility='visible'}
+})();</script></body></html>
